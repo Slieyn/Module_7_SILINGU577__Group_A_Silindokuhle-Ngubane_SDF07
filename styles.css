@@ -157,14 +157,16 @@ body {
     flex-wrap: wrap;
     margin: -1rem -1rem;
     padding-bottom: 3rem;
+    gap:1rem;
 }
 
 .gallery-item {
     position: relative;
     flex: 1 0 22rem;
-    margin: 1rem;
-    color:rgb(58, 148, 179);
+    gap: 1rem;
+    color:rgb(104, 196, 224);
     cursor: pointer;
+   
 }
 
 .gallery-item:hover  .gallery-item-info,
@@ -227,6 +229,7 @@ body {
 
 }
 
+
 /*Media Query*/
 @media screen and (max-width:400rem) {
     .profile {
@@ -266,18 +269,15 @@ body {
     .profile-edit-btn {
         order: 1;
         padding: 1;
+        align-items: center;
         text-align: center;
         margin-top: 2rem;
         background-color: white;
         border-radius: 8%;
-    
-
-
 
     }
 
     .profile-bio {
-        font-size: 1.4rem;
         margin-top: 1.5rem;
    }
      
@@ -310,6 +310,12 @@ body {
         display: block;
     }
     
+    /*Spinner Animation*/
+    @keyframes loader {
+        to {
+            transform: rotate(360deg);
+        }
+    }
 }
 /*Grid*/
 
@@ -336,3 +342,4 @@ body {
     width: auto;
     margin: 0;
 }
+ 
