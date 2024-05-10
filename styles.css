@@ -163,7 +163,6 @@ body {
 .gallery-item {
     position: relative;
     flex: 1 0 22rem;
-    gap: 1rem;
     color:rgb(104, 196, 224);
     cursor: pointer;
    
